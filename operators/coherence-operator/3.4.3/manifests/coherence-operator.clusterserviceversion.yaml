@@ -5,7 +5,7 @@ metadata:
     alm-examples: '[]'
     capabilities: Auto Pilot
     categories: Database
-    containerImage: ghcr.io/oracle/coherence-operator:3.4.3
+    containerImage: ghcr.io/oracle/coherence-operator:3.4.2
     createdAt: "2025-02-18T10:22:07Z"
     description: The Oracle Coherence Kubernetes Operator enables easy management
       of Oracle Coherence clusters in a Kubernetes environment.
@@ -24,7 +24,7 @@ metadata:
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v4
     repository: https://github.com/oracle/coherence-operator
     support: Oracle Corporation
-  name: coherence-operator.v3.4.3
+  name: coherence-operator.v3.4.2
 spec:
   apiservicedefinitions: {}
   customresourcedefinitions: {}
@@ -161,9 +161,9 @@ spec:
           app.kubernetes.io/instance: coherence-operator-manager
           app.kubernetes.io/name: coherence-operator
           app.kubernetes.io/part-of: coherence-operator
-          app.kubernetes.io/version: 3.4.3
+          app.kubernetes.io/version: 3.4.2
           control-plane: coherence
-          version: 3.4.3
+          version: 3.4.2
         name: coherence-operator-controller-manager
         spec:
           replicas: 3
@@ -179,9 +179,9 @@ spec:
                 app.kubernetes.io/instance: coherence-operator-manager
                 app.kubernetes.io/name: coherence-operator
                 app.kubernetes.io/part-of: coherence-operator
-                app.kubernetes.io/version: 3.4.3
+                app.kubernetes.io/version: 3.4.2
                 control-plane: coherence
-                version: 3.4.3
+                version: 3.4.2
             spec:
               affinity:
                 nodeAffinity:
@@ -204,7 +204,7 @@ spec:
                         matchLabels:
                           app.kubernetes.io/instance: coherence-operator-manager
                           app.kubernetes.io/name: coherence-operator
-                          app.kubernetes.io/version: 3.4.3
+                          app.kubernetes.io/version: 3.4.2
                           control-plane: coherence
                       topologyKey: topology.kubernetes.io/zone
                     weight: 50
@@ -213,7 +213,7 @@ spec:
                         matchLabels:
                           app.kubernetes.io/instance: coherence-operator-manager
                           app.kubernetes.io/name: coherence-operator
-                          app.kubernetes.io/version: 3.4.3
+                          app.kubernetes.io/version: 3.4.2
                           control-plane: coherence
                       topologyKey: oci.oraclecloud.com/fault-domain
                     weight: 10
@@ -222,7 +222,7 @@ spec:
                         matchLabels:
                           app.kubernetes.io/instance: coherence-operator-manager
                           app.kubernetes.io/name: coherence-operator
-                          app.kubernetes.io/version: 3.4.3
+                          app.kubernetes.io/version: 3.4.2
                           control-plane: coherence
                       topologyKey: kubernetes.io/hostname
                     weight: 1
@@ -253,7 +253,7 @@ spec:
                 - configMapRef:
                     name: env-vars
                     optional: true
-                image: ghcr.io/oracle/coherence-operator:3.4.3
+                image: ghcr.io/oracle/coherence-operator:3.4.2
                 livenessProbe:
                   failureThreshold: 3
                   httpGet:
@@ -303,7 +303,7 @@ spec:
                   matchLabels:
                     app.kubernetes.io/instance: coherence-operator-manager
                     app.kubernetes.io/name: coherence-operator
-                    app.kubernetes.io/version: 3.4.3
+                    app.kubernetes.io/version: 3.4.2
                     control-plane: coherence
                 maxSkew: 1
                 topologyKey: topology.kubernetes.io/zone
@@ -379,4 +379,4 @@ spec:
   provider:
     name: Oracle Corporation
     url: https://github.com/oracle/coherence-operator
-  version: 3.4.3
+  version: 3.4.2

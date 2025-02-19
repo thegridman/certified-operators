@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/instance: coherence-operator-rest
     app.kubernetes.io/name: coherence-operator
     app.kubernetes.io/part-of: coherence-operator
-    app.kubernetes.io/version: 3.4.3
+    app.kubernetes.io/version: 3.4.2
     control-plane: coherence
   name: coherence-operator-rest
 spec:
@@ -19,6 +19,6 @@ spec:
     app.kubernetes.io/component: manager
     app.kubernetes.io/instance: coherence-operator-manager
     app.kubernetes.io/name: coherence-operator
-    app.kubernetes.io/version: 3.4.3
+    app.kubernetes.io/version: 3.4.2
 status:
   loadBalancer: {}
