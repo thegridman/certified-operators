@@ -3,33 +3,23 @@ kind: ClusterServiceVersion
 metadata:
   annotations:
     alm-examples: '[]'
-    capabilities: Auto Pilot
+    capabilities: Full Lifecycle
     categories: Database
+    certified: "false"
     containerImage: ghcr.io/oracle/coherence-operator:3.4.2
-    createdAt: "2025-02-18T10:22:07Z"
+    createdAt: "2025-02-25T08:26:09Z"
     description: The Oracle Coherence Kubernetes Operator enables easy management
-      of Oracle Coherence clusters in a Kubernetes environment.
-    features.operators.openshift.io/cnf: "false"
-    features.operators.openshift.io/cni: "false"
-    features.operators.openshift.io/csi: "false"
-    features.operators.openshift.io/disconnected: "true"
-    features.operators.openshift.io/fips-compliant: "true"
-    features.operators.openshift.io/proxy-aware: "false"
-    features.operators.openshift.io/tls-profiles: "false"
-    features.operators.openshift.io/token-auth-aws: "false"
-    features.operators.openshift.io/token-auth-azure: "false"
-    features.operators.openshift.io/token-auth-gcp: "false"
-    operators.openshift.io/infrastructure-features: '["disconnected"]'
+      of Coherence clusters in a Kubernetes environment.
     operators.operatorframework.io/builder: operator-sdk-v1.39.1
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v4
     repository: https://github.com/oracle/coherence-operator
-    support: Oracle Corporation
+    support: ""
   name: coherence-operator.v3.4.2
 spec:
   apiservicedefinitions: {}
   customresourcedefinitions: {}
   description: |
-    The Oracle Coherence Kubernetes Operator enables easy management of Oracle Coherence clusters in a Kubernetes environment.
+    The Oracle Coherence Kubernetes Operator enables easy management of Coherence clusters in a Kubernetes environment.
 
     ### Installation Guide & Configuration
 
@@ -359,22 +349,13 @@ spec:
   - supported: true
     type: AllNamespaces
   keywords:
-  - Coherence
-  - In Memory Data
-  - Data Grid
-  - Caching
-  - Cloud-Native
-  - Private Cloud
-  labels:
-    operatorframework.io/arch.amd64: supported
-    operatorframework.io/arch.arm64: supported
-    operatorframework.io/os.linux: supported
+  - coherence
   links:
   - name: Coherence Kubernetes Operator
     url: https://oracle.github.io/coherence-operator/docs/latest
   - name: Oracle Coherence
     url: https://coherence.community
-  maturity: stable
+  maturity: alpha
   minKubeVersion: 1.26.0
   provider:
     name: Oracle Corporation
