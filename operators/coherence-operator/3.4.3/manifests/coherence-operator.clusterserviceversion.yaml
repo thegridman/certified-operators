@@ -28,7 +28,7 @@ metadata:
     capabilities: Full Lifecycle
     categories: Database
     certified: "false"
-    containerImage: iad.ocir.io/odx-stateservice/test/coherence-operator/coherence-operator:3.4.3
+    containerImage: ghcr.io/thegridman/coherence-operator:3.4.3
     createdAt: "2025-03-04T08:49:47Z"
     description: The Oracle Coherence Kubernetes Operator enables easy management
       of Coherence clusters in a Kubernetes environment.
